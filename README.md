@@ -56,6 +56,11 @@ pip install -r requirements.txt
 python3 manage.py runserver
 ```
 
+## Run the application with a docker container
 
+Run the following shell script to run your docker container
 
+```
+./scripts/run_docker.sh
+```
 
