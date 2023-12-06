@@ -1,0 +1,10 @@
+---
+# tasks file for update_server
+
+- name: Update the package index
+  apt:
+    update_cache: yes
+
+- name: Update all packages to the latest version
+  apt:
+    upgrade: dist
