@@ -4,3 +4,5 @@
   roles:
     - test_connectivity
     - update_server
+    - system_packages
+    - setup_docker
