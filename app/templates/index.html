@@ -1,11 +1,64 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pasona</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 <body>
-    <h1>Hello World!</h1>
+    
+    <!-- Nav bar -->
+
+    <div  class="navbar">
+
+        <h2>John  <span>Doe</span> </h2>
+        <ul>
+            <li> <a href="./about.html">ABOUT</a> </li>
+            <li> <a href="#">SERVICES</a> </li>
+            <li> <a href="#">SKILLS</a> </li>
+            <li> <a href="#">EXPERIENCE</a> </li>
+            <li> <a href="#">PROJECTS</a> </li>
+            <li> <a href="#">CONTACT</a> </li>
+        </ul>
+
+    </div>
+
+    <!-- Hero section -->
+
+    <div class="hero">
+
+        <!-- Hero Left -->
+        
+        <div class="hero_left">
+
+            <h1>Hi, I'm  <span>John Doe</span> Fullstack Developer</h1>
+
+            <p>Experienced Fullstack Developer with a demonstrated history of working in the internet industry. Building web applications with React, Javascript, HTML, CSS, Python, Flask and PosgreSQL</p>
+
+            <div class="my_buttons">
+                <button>View Resume</button>
+                <button  id="contact_btn">Contact Me</button>
+            </div>
+
+            <div class="icons">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+        </div>
+
+
+        <!-- Hero right -->
+        <div class="hero_right">
+            <img src="{% static 'images/image.png' %}" alt="my photo">
+        </div>
+
+    </div>
+
 </body>
 </html>

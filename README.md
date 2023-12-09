@@ -13,7 +13,7 @@ In order to follow along you need to setup/install the following
 - Ansible
 - Vagrant
 - GCP
-- Python
+- Python3
 - Pip
 - PostgreSQL
 
@@ -32,25 +32,26 @@ Follow the following steps to run the website locally on your computer:
 git clone git@github.com:kadimasum/sava.git
 ```
 
-2. Create a virtual environment
+2. Navigate to the folder you have just cloned
+3. Create a virtual environment
 
 ```
 python -m venv .venv
 ```
 
-3. Activate the virtual environment
+4. Activate the virtual environment
 
 ```
 source .venv/bin/activate
 ```
 
-4. Install depenndancies
+5. Install depenndancies
 
 ```
 pip install -r requirements.txt
 ```
 
-5. Run application
+6. Run application
 
 ```
 python3 manage.py runserver
@@ -64,3 +65,4 @@ Run the following shell script to run your docker container
 ./scripts/run_docker.sh
 ```
 
+## Run the application locally on an Ubuntu Virtuual Machine

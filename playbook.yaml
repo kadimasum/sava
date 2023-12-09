@@ -1,8 +1,9 @@
 ---
 - hosts: all
-  become: yes
+  become: true
   roles:
     - test_connectivity
     - update_server
     - system_packages
     - setup_docker
+    - run_prosava_container
