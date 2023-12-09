@@ -15,10 +15,10 @@ spec:
       containers:
       - name: prosava-web
         image: samuelkadima/sava:v1.0.0
-        # resources:
-        #   limits:
-        #     memory: "800Mi"
-        #     cpu: "800m"
+        resources:
+          limits:
+            memory: "800Mi"
+            cpu: "800m"
         ports:
         - containerPort: 8080
 
