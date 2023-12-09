@@ -12,6 +12,7 @@ In order to follow along you need to setup/install the following
 - Git & GitHub
 - Ansible
 - Vagrant
+- Kubernetes
 - GCP
 - Python3
 - Pip
