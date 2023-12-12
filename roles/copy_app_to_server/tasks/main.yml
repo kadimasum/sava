@@ -1,0 +1,25 @@
+---
+# tasks file for copy_app_to_server
+
+- name: Ensure /home/sava directory exists
+  file:
+    path: /home/sava
+    state: directory
+  register: result
+
+- debug:
+    var: result
+
+
+- name: Copy directory to remote host
+  ansible.builtin.copy:
+    src: "../../code/sava/"
+    dest: /home/sava
+    remote_src: yes
+
+- name: Debugging task
+  debug:
+    var: item
+  with_items:
+    - "../../code/sava/"
+    - "/home/sava"

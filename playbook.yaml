@@ -6,4 +6,5 @@
     - update_server
     - system_packages
     - setup_docker
+    - copy_app_to_server
     - run_prosava_container
